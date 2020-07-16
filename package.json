@@ -1,0 +1,31 @@
+{
+  "name": "11-note-taker",
+  "version": "1.0.0",
+  "description": "A web application for taking notes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titanian229/11-Note-Taker.git"
+  },
+  "keywords": [
+    "notes",
+    "note",
+    "taking",
+    "node",
+    "express"
+  ],
+  "author": "James Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/titanian229/11-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/titanian229/11-Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.1.0"
+  }
+}

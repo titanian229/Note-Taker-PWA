@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        />
+        <script src="https://kit.fontawesome.com/d8e179be37.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <link rel="stylesheet" href="/assets/style.css" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <title>Note Taker</title>
+    </head>
+    <body>
+        <header>
+            <div class="line"></div>
+            <p><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note Taker</p>
+        </header>
+        <div class="main-container container">
+            <div id="center-box" class="box animate__animated animate__pulse animate__delay-2s">
+                <p>Welcome to Note Taker</p>
+                <p>powered by Express and Node</p>
+                <a class="btn btn-primary" href="./note.html">Get Started</a>
+            </div>
+        </div>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

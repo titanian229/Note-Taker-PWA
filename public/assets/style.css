@@ -1,0 +1,232 @@
+:root {
+    /* Palette 2 */
+    --b1: hsl(209, 51%, 68%);
+    --b2: hsl(205, 43%, 55%);
+    --b3: hsl(202, 53%, 42%);
+    --b4: hsl(199, 85%, 30%);
+    --b5: hsl(203, 74%, 29%);
+    --b6: hsl(209, 61%, 28%);
+    --b7: hsl(219, 49%, 27%);
+    --g1: hsl(178, 91%, 34%);
+    --p1: hsl(261, 54%, 10%);
+    /* --b2-comp: hsl(21.2,43.2%,55.1%); */
+    --b2-comp: hsl(252.7, 43.2%, 55.1%);
+    --g1-comp: hsl(358.1, 90.8%, 34.1%);
+
+    --g1-o: hsla(178, 91%, 34%, 0.7);
+    --b3-o: hsla(202, 53%, 42%, 0.9);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(./landscape-photo-of-mountain-fullq.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 100px);
+}
+
+#center-box {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.box {
+    border-radius: 1rem;
+    background-color: var(--g1-o);
+}
+
+#center-box p {
+    margin: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: hsla(205, 55%, 15%, 1);
+}
+
+#center-box p:nth-child(2) {
+    font-size: 1rem;
+}
+
+#center-box a {
+    margin-top: 3rem;
+}
+
+#center-box-note {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: "Comfortaa";
+    box-shadow: 1px 2px 4px #333;
+    color: #333;
+}
+
+#center-box-note input,
+#center-box-note textarea {
+    background-color: hsla(202, 53%, 42%, 0.5);
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 1px 2px 2px #333;
+}
+#center-box-note input {
+    font-size: 2em;
+    text-align: center;
+}
+
+#center-box-note textarea {
+    font-family: "Open Sans";
+}
+
+#center-box-note > * {
+    margin: 0.5rem;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--b2);
+    color: hsla(205, 55%, 15%, 1);
+    font-size: 3rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Comfortaa;
+    box-shadow: 0 2px 4px var(--b7);
+    position: absolute;
+    top: 5px;
+    left: 2vw;
+    width: 96vw;
+    height: 100px;
+}
+
+header p {
+    margin: 0;
+}
+
+header i {
+    font-size: 2.1rem;
+}
+
+.line {
+    border-top: 6px solid var(--b2-comp);
+    width: 84vw;
+    position: absolute;
+    top: 0;
+    left: 6vw;
+}
+
+#ham {
+    position: absolute;
+    left: 0rem;
+    top: 0px;
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#ham:hover {
+    background-color: var(--b2-comp);
+}
+
+.sidebar-menu {
+    position: absolute;
+    left: 2vw;
+    top: 105px;
+    background-color: var(--b3-o);
+    width: 40vw;
+    padding: 0;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 4px 4px 4px var(--b7);
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    /* margin: 1rem; */
+    padding: 1rem 0;
+}
+
+.sidebar-menu li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    color: hsla(205, 55%, 15%, 1);
+    cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+    background-color: var(--b7);
+    color: var(--b1);
+}
+
+.sidebar-menu li i {
+    float: right;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+#save-button {
+    border-radius: 5px;
+    background-color: hsla(119.2,90.8%,34.1%, 0.7);
+}
+
+#delete-button {
+    border-radius: 5px;
+    background-color: #a6080a;
+    width: 3rem;
+}
+
+.button {
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    border: none;
+    box-shadow: 1px 1px 2px #333;
+}
+
+@media screen and (max-width: 500px) {
+    #center-box {
+        width: 80vw;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    .sidebar-menu {
+        width: 80vw;
+    }
+}
